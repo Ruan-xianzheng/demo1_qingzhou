@@ -1,0 +1,9 @@
+<!--实现slam与导航，实现机器人自主移动的地图构建-->
+<launch>
+    <!--slam建图实现-->
+    <include file ="$(find qingzhou_mapping)/launch/gmapping.launch" />
+    <!--导航中的move_base-->
+    <include file ="$(find qingzhou_nav)/launch/qingzhou_move_base_teb.launch" />
+
+
+</launch>
